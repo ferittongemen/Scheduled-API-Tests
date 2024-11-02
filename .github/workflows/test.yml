@@ -1,40 +1,40 @@
 name: Run Tests and Publish Allure Report to GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
   schedule:
-    - cron: '10 7,19 * * *'  # UTC'ye göre sabah ve akşam 09:38 ve 21:38 (Türkiye saati UTC+3)
+    - cron: '38 6,18 * * *'  # Türkiye saatiyle sabah ve akşam 09:38 (UTC+3)
+  workflow_dispatch:  # Manuel olarak çalıştırmayı etkinleştirir
 
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+
     steps:
-      - name: Checkout Code
+      - name: Kodu Clone Et
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Python Kur
         uses: actions/setup-python@v3
         with:
           python-version: '3.x'
 
-      - name: Install Dependencies
+      - name: Bağımlılıkları Kur
         run: |
-          pip install pytest allure-pytest
+          pip install pytest requests  # Gerekli bağımlılıkları buraya ekleyin
 
-      - name: Run Tests and Generate Allure Results
+      - name: API Testlerini Çalıştır
+        run: pytest -v
+
+      - name: Allure Raporunu Hazırla
+        if: success()
         run: |
-          pytest --alluredir=allure-results
+          mkdir -p allure-report
+          allure generate --clean --output allure-report
 
-      - name: Generate Allure Report
-        run: |
-          allure generate allure-results --clean -o allure-report
-
-      - name: Deploy to GitHub Pages
+      - name: Raporu GitHub Pages ile Yayınla
         if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
