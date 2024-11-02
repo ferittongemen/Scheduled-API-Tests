@@ -2,7 +2,8 @@ name: Scheduled API Tests
 
 on:
   schedule:
-    - cron: '38 6,18 * * *'  # UTC'ye göre sabah ve akşam 09:34 (Türkiye saati UTC+3)
+    - cron: '44 6,18 * * *'  # UTC'ye göre sabah ve akşam 09:38 ve 21:38 (Türkiye saati UTC+3)
+  workflow_dispatch:  # Manuel çalıştırma desteği
 
 jobs:
   test:
