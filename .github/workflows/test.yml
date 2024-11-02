@@ -2,8 +2,8 @@ name: Daily API Tests
 
 on:
   schedule:
-    - cron: '0 7 * * *'  # Her gün sabah 7'de çalıştır
-  workflow_dispatch:  # Manuel çalıştırma seçeneği ekler
+    - cron: '43 17 * * *'  # Türkiye saatiyle her gün 20:43'te çalışır
+  workflow_dispatch:  # Manuel çalıştırma seçeneği
 
 jobs:
   test:
