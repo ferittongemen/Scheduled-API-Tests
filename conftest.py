@@ -2,10 +2,12 @@ import os
 import pytest
 import requests
 from pages.pet_page import PetPage
+import os
+
 
 # Slack Webhook URL'sini ortam değişkeninden alın
 SLACK_WEBHOOK_URL = os.getenv("SLACK_WEBHOOK_URL")
-
+print("SLACK_WEBHOOK_URL mevcut:", SLACK_WEBHOOK_URL is not None)
 @pytest.fixture(scope="module")
 def pet_page():
     return PetPage()
