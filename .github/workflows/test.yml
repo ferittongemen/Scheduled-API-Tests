@@ -2,7 +2,7 @@ name: Scheduled API Tests
 
 on:
   schedule:
-    - cron: '34 6,18 * * *'  # UTC'ye göre sabah ve akşam 09:34 (Türkiye saati UTC+3)
+    - cron: '38 6,18 * * *'  # UTC'ye göre sabah ve akşam 09:34 (Türkiye saati UTC+3)
 
 jobs:
   test:
@@ -22,7 +22,7 @@ jobs:
 
       - name: Bağımlılıkları Kur
         run: |
-          pip install -r requirements.txt
+          pip install pytest requests  # Gerekli bağımlılıkları buraya ekleyin
 
       - name: API Testlerini Çalıştır
         run: pytest -v
