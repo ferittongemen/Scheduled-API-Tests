@@ -2,8 +2,8 @@ name: Run Tests and Publish Allure Report to GitHub Pages
 
 on:
   schedule:
-    - cron: '38 6,18 * * *'  # Türkiye saatiyle sabah ve akşam 09:38 (UTC+3)
-  workflow_dispatch:  # Manuel olarak çalıştırmayı etkinleştirir
+    - cron: '38 6,18 * * *'  # Sabah ve akşam 09:38 (Türkiye saati UTC+3)
+  workflow_dispatch:  # Manuel tetikleme desteği
 
 jobs:
   test:
@@ -23,18 +23,20 @@ jobs:
 
       - name: Bağımlılıkları Kur
         run: |
-          pip install pytest requests  # Gerekli bağımlılıkları buraya ekleyin
+          pip install pytest requests allure-pytest  # Gerekli bağımlılıkları kur
+
+      - name: Allure CLI Kur
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y allure
 
       - name: API Testlerini Çalıştır
-        run: pytest -v
+        run: pytest --alluredir=allure-results -v  # Test sonuçlarını Allure formatında kaydet
 
-      - name: Allure Raporunu Hazırla
-        if: success()
-        run: |
-          mkdir -p allure-report
-          allure generate --clean --output allure-report
+      - name: Allure Raporu Oluştur
+        run: allure generate --clean --output allure-report
 
-      - name: Raporu GitHub Pages ile Yayınla
+      - name: Allure Raporunu GitHub Pages'e Yükle
         if: success()
         uses: peaceiris/actions-gh-pages@v3
         with:
