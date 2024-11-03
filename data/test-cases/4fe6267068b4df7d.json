@@ -1,0 +1,83 @@
+{
+  "uid" : "4fe6267068b4df7d",
+  "name" : "test_delete_pet",
+  "fullName" : "tests.test_04_delete_pet#test_delete_pet",
+  "historyId" : "f95766b1f9ad92c15ad68fb369887178",
+  "time" : {
+    "start" : 1730598512122,
+    "stop" : 1730598512509,
+    "duration" : 387
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "pet_page",
+    "time" : {
+      "start" : 1730598512037,
+      "stop" : 1730598512037,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup_pet",
+    "time" : {
+      "start" : 1730598512037,
+      "stop" : 1730598512121,
+      "duration" : 84
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_04_delete_pet"
+  }, {
+    "name" : "host",
+    "value" : "fv-az1532-499"
+  }, {
+    "name" : "thread",
+    "value" : "1727-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_04_delete_pet"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4fe6267068b4df7d.json",
+  "parameterValues" : [ ]
+}

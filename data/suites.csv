@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Nov 03 01:48:31 UTC 2024","Sun Nov 03 01:48:31 UTC 2024","225","tests","test_03_update_pet","","","","test_update_pet",""
+"passed","Sun Nov 03 01:48:30 UTC 2024","Sun Nov 03 01:48:30 UTC 2024","283","tests","test_01_create_pet","","","","test_create_pet",""
+"passed","Sun Nov 03 01:48:32 UTC 2024","Sun Nov 03 01:48:32 UTC 2024","387","tests","test_04_delete_pet","","","","test_delete_pet",""
+"passed","Sun Nov 03 01:48:31 UTC 2024","Sun Nov 03 01:48:31 UTC 2024","106","tests","test_02_get_pet","","","","test_get_pet",""
