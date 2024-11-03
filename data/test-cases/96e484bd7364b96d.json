@@ -1,21 +1,36 @@
 {
-  "uid" : "875d4cfc44f82cbd",
-  "name" : "test_update_pet",
-  "fullName" : "tests.test_03_update_pet#test_update_pet",
-  "historyId" : "02a2eb4fd843fc9957ca3662caa93d56",
+  "uid" : "96e484bd7364b96d",
+  "name" : "test_get_pet",
+  "fullName" : "tests.test_02_get_pet#test_get_pet",
+  "historyId" : "e8753339f8d58af9fde9d043f20a9317",
   "time" : {
-    "start" : 1730598511696,
-    "stop" : 1730598511921,
-    "duration" : 225
+    "start" : 1730599013300,
+    "stop" : 1730599013594,
+    "duration" : 294
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
+    "name" : "setup_pet",
+    "time" : {
+      "start" : 1730599012848,
+      "stop" : 1730599013300,
+      "duration" : 452
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
     "name" : "pet_page",
     "time" : {
-      "start" : 1730598511400,
-      "stop" : 1730598511400,
+      "start" : 1730599012848,
+      "stop" : 1730599012848,
       "duration" : 0
     },
     "status" : "passed",
@@ -26,35 +41,36 @@
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : false
-  }, {
-    "name" : "setup_pet",
-    "time" : {
-      "start" : 1730598511400,
-      "stop" : 1730598511695,
-      "duration" : 295
-    },
+  } ],
+  "testStage" : {
     "status" : "passed",
     "steps" : [ ],
-    "attachments" : [ ],
+    "attachments" : [ {
+      "uid" : "fb9f6b3293cb8cbb",
+      "name" : "stdout",
+      "source" : "fb9f6b3293cb8cbb.txt",
+      "type" : "text/plain",
+      "size" : 118
+    } ],
     "parameters" : [ ],
     "stepsCount" : 0,
-    "attachmentsCount" : 0,
+    "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : false
-  } ],
+    "hasContent" : true
+  },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "parentSuite",
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "test_03_update_pet"
+    "value" : "test_02_get_pet"
   }, {
     "name" : "host",
-    "value" : "fv-az1532-499"
+    "value" : "fv-az1019-33"
   }, {
     "name" : "thread",
-    "value" : "1727-MainThread"
+    "value" : "1842-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -63,7 +79,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.test_03_update_pet"
+    "value" : "tests.test_02_get_pet"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -78,6 +94,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "875d4cfc44f82cbd.json",
+  "source" : "96e484bd7364b96d.json",
   "parameterValues" : [ ]
 }
