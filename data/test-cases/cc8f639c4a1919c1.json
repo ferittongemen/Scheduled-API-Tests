@@ -1,12 +1,12 @@
 {
-  "uid" : "d006a191d60f9950",
-  "name" : "test_update_pet",
-  "fullName" : "tests.test_03_update_pet#test_update_pet",
-  "historyId" : "02a2eb4fd843fc9957ca3662caa93d56",
+  "uid" : "cc8f639c4a1919c1",
+  "name" : "test_create_pet",
+  "fullName" : "tests.test_01_create_pet#test_create_pet",
+  "historyId" : "df9ab8989228de51e66e6127e3447217",
   "time" : {
-    "start" : 1730616404875,
-    "stop" : 1730616405152,
-    "duration" : 277
+    "start" : 1730919245272,
+    "stop" : 1730919245460,
+    "duration" : 188
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,8 +14,8 @@
   "beforeStages" : [ {
     "name" : "pet_page",
     "time" : {
-      "start" : 1730616404783,
-      "stop" : 1730616404783,
+      "start" : 1730919245086,
+      "stop" : 1730919245086,
       "duration" : 0
     },
     "status" : "passed",
@@ -29,9 +29,9 @@
   }, {
     "name" : "setup_pet",
     "time" : {
-      "start" : 1730616404783,
-      "stop" : 1730616404874,
-      "duration" : 91
+      "start" : 1730919245086,
+      "stop" : 1730919245271,
+      "duration" : 185
     },
     "status" : "passed",
     "steps" : [ ],
@@ -48,13 +48,13 @@
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "test_03_update_pet"
+    "value" : "test_01_create_pet"
   }, {
     "name" : "host",
-    "value" : "fv-az651-895"
+    "value" : "fv-az1498-585"
   }, {
     "name" : "thread",
-    "value" : "1752-MainThread"
+    "value" : "1720-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -63,7 +63,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.test_03_update_pet"
+    "value" : "tests.test_01_create_pet"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -78,6 +78,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d006a191d60f9950.json",
+  "source" : "cc8f639c4a1919c1.json",
   "parameterValues" : [ ]
 }
