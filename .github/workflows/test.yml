@@ -45,3 +45,11 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./allure-report
           publish_branch: gh-pages
+
+      - name: Slack'e Allure Rapor Linkini Gönder
+        if: success()  # Sadece başarı durumunda çalıştır
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          ALLURE_REPORT_URL="https://ferittongemen.github.io/Scheduled-API-Tests/"
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Yeni Allure Raporu yayında: '"$ALLURE_REPORT_URL"'"}' $SLACK_WEBHOOK_URL
