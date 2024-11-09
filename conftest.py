@@ -1,4 +1,3 @@
-import os
 import pytest
 import requests
 from pages.pet_page import PetPage
