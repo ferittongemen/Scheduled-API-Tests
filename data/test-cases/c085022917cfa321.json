@@ -1,12 +1,12 @@
 {
-  "uid" : "bc6f990bb962f540",
+  "uid" : "c085022917cfa321",
   "name" : "test_update_pet",
   "fullName" : "tests.test_03_update_pet#test_update_pet",
   "historyId" : "02a2eb4fd843fc9957ca3662caa93d56",
   "time" : {
-    "start" : 1730919245904,
-    "stop" : 1730919245978,
-    "duration" : 74
+    "start" : 1731158706538,
+    "stop" : 1731158706694,
+    "duration" : 156
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,8 +14,8 @@
   "beforeStages" : [ {
     "name" : "pet_page",
     "time" : {
-      "start" : 1730919245870,
-      "stop" : 1730919245870,
+      "start" : 1731158706434,
+      "stop" : 1731158706434,
       "duration" : 0
     },
     "status" : "passed",
@@ -29,9 +29,9 @@
   }, {
     "name" : "setup_pet",
     "time" : {
-      "start" : 1730919245870,
-      "stop" : 1730919245904,
-      "duration" : 34
+      "start" : 1731158706435,
+      "stop" : 1731158706537,
+      "duration" : 102
     },
     "status" : "passed",
     "steps" : [ ],
@@ -51,10 +51,10 @@
     "value" : "test_03_update_pet"
   }, {
     "name" : "host",
-    "value" : "fv-az1498-585"
+    "value" : "fv-az523-697"
   }, {
     "name" : "thread",
-    "value" : "1720-MainThread"
+    "value" : "1700-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -78,6 +78,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "bc6f990bb962f540.json",
+  "source" : "c085022917cfa321.json",
   "parameterValues" : [ ]
 }
