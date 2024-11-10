@@ -1,22 +1,22 @@
 {
-  "uid" : "c085022917cfa321",
-  "name" : "test_update_pet",
-  "fullName" : "tests.test_03_update_pet#test_update_pet",
-  "historyId" : "02a2eb4fd843fc9957ca3662caa93d56",
+  "uid" : "f81f1b7168bb85fa",
+  "name" : "test_create_pet",
+  "fullName" : "tests.test_01_create_pet#test_create_pet",
+  "historyId" : "df9ab8989228de51e66e6127e3447217",
   "time" : {
-    "start" : 1731158706538,
-    "stop" : 1731158706694,
-    "duration" : 156
+    "start" : 1731243208074,
+    "stop" : 1731243208281,
+    "duration" : 207
   },
   "status" : "passed",
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "pet_page",
+    "name" : "setup_pet",
     "time" : {
-      "start" : 1731158706434,
-      "stop" : 1731158706434,
-      "duration" : 0
+      "start" : 1731243207917,
+      "stop" : 1731243208073,
+      "duration" : 156
     },
     "status" : "passed",
     "steps" : [ ],
@@ -27,11 +27,11 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "setup_pet",
+    "name" : "pet_page",
     "time" : {
-      "start" : 1731158706435,
-      "stop" : 1731158706537,
-      "duration" : 102
+      "start" : 1731243207917,
+      "stop" : 1731243207917,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -48,13 +48,13 @@
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "test_03_update_pet"
+    "value" : "test_01_create_pet"
   }, {
     "name" : "host",
-    "value" : "fv-az523-697"
+    "value" : "fv-az1121-259"
   }, {
     "name" : "thread",
-    "value" : "1700-MainThread"
+    "value" : "1728-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -63,7 +63,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.test_03_update_pet"
+    "value" : "tests.test_01_create_pet"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -78,6 +78,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "c085022917cfa321.json",
+  "source" : "f81f1b7168bb85fa.json",
   "parameterValues" : [ ]
 }

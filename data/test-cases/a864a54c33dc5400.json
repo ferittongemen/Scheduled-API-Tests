@@ -1,12 +1,12 @@
 {
-  "uid" : "489424e41fb3dd90",
-  "name" : "test_create_pet",
-  "fullName" : "tests.test_01_create_pet#test_create_pet",
-  "historyId" : "df9ab8989228de51e66e6127e3447217",
+  "uid" : "a864a54c33dc5400",
+  "name" : "test_get_pet",
+  "fullName" : "tests.test_02_get_pet#test_get_pet",
+  "historyId" : "e8753339f8d58af9fde9d043f20a9317",
   "time" : {
-    "start" : 1731158705748,
-    "stop" : 1731158705839,
-    "duration" : 91
+    "start" : 1731243208449,
+    "stop" : 1731243208523,
+    "duration" : 74
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,9 +14,9 @@
   "beforeStages" : [ {
     "name" : "setup_pet",
     "time" : {
-      "start" : 1731158705537,
-      "stop" : 1731158705748,
-      "duration" : 211
+      "start" : 1731243208375,
+      "stop" : 1731243208448,
+      "duration" : 73
     },
     "status" : "passed",
     "steps" : [ ],
@@ -29,8 +29,8 @@
   }, {
     "name" : "pet_page",
     "time" : {
-      "start" : 1731158705537,
-      "stop" : 1731158705537,
+      "start" : 1731243208375,
+      "stop" : 1731243208375,
       "duration" : 0
     },
     "status" : "passed",
@@ -42,19 +42,35 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "580aa69d85692dd7",
+      "name" : "stdout",
+      "source" : "580aa69d85692dd7.txt",
+      "type" : "text/plain",
+      "size" : 118
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
   "afterStages" : [ ],
   "labels" : [ {
     "name" : "parentSuite",
     "value" : "tests"
   }, {
     "name" : "suite",
-    "value" : "test_01_create_pet"
+    "value" : "test_02_get_pet"
   }, {
     "name" : "host",
-    "value" : "fv-az523-697"
+    "value" : "fv-az1121-259"
   }, {
     "name" : "thread",
-    "value" : "1700-MainThread"
+    "value" : "1728-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -63,7 +79,7 @@
     "value" : "cpython3"
   }, {
     "name" : "package",
-    "value" : "tests.test_01_create_pet"
+    "value" : "tests.test_02_get_pet"
   }, {
     "name" : "resultFormat",
     "value" : "allure2"
@@ -78,6 +94,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "489424e41fb3dd90.json",
+  "source" : "a864a54c33dc5400.json",
   "parameterValues" : [ ]
 }
