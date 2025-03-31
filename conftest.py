@@ -4,7 +4,6 @@ from pages.pet_page import PetPage
 import os
 
 
-# Slack Webhook URL'sini ortam değişkeninden alın
 SLACK_WEBHOOK_URL = os.getenv("SLACK_WEBHOOK_URL")
 print("SLACK_WEBHOOK_URL mevcut:", SLACK_WEBHOOK_URL is not None)
 @pytest.fixture(scope="module")
@@ -19,15 +18,14 @@ def setup_pet(pet_page):
         "name": "Buddy",
         "status": "available"
     }
-    # Her testten önce pet yarat
     pet_page.create_pet(pet_data)
 
 def pytest_runtest_makereport(item, call):
     """Her bir test sonucu için Slack bildirim gönderir."""
     if call.when == "call":
-        if call.excinfo is not None:  # Test başarısız ise
+        if call.excinfo is not None: 
             send_slack_notification(item.nodeid, f"Başarısız: {call.excinfo}")
-        else:  # Test başarılı ise
+        else:  
             send_slack_notification(item.nodeid, "Başarılı")
 
 def pytest_sessionfinish(session, exitstatus):
